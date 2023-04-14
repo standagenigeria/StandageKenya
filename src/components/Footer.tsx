@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import brand from "../assets/icons/brand.svg";
-import instagram from "../assets/icons/social.svg";
+import brand from "../assets/brand.png";
 import { ImWhatsapp } from "react-icons/im";
 import { BsLinkedin, BsInstagram, BsTwitter } from "react-icons/bs";
-import twitter from "../assets/icons/social-4.svg";
+import { FiMail } from 'react-icons/fi';
+import { MdPhoneInTalk} from 'react-icons/md';
 import copyright from "../assets/icons/copyright.svg";
 
 const Footer = () => {
@@ -18,15 +18,27 @@ const Footer = () => {
         <div className="nav">
           <Link to="/">Home</Link>
           <Link to="/about">About us</Link>
-          {/* <Link to="/merchandise">Merchandise</Link>
-          <Link to="/blog">Blog</Link> */}
           <Link to="/contact-us">Contact Us</Link>
         </div>
+      <div className="container">
+          <div className="address">
+            <h4 className="orange headquarters">Headquarters</h4>
+            <p className="city">4F Shiba NA Building, 3-6-10, Shiba
+Minato-ku, Tokyo, Japan, 105-0014</p>
+        </div>
+      </div>
         <div className="container">
           <div className="address">
-            <p>5 Ragati Road, Nairobi Kenya.</p>
-            <p>info@standage.com.ng</p>
-            <p>+254-916 123 8193</p>
+            <h4 className="orange lagos">Kenya Office</h4>
+            <p className="city">No 1, Adedotun Dina Crescent, Mende Maryland, Lagos. Nigeria</p>
+            <div className="box">
+              <FiMail/>
+              <p>info@standage.com.ng</p>
+            </div>
+            <div className="box">
+              <MdPhoneInTalk/>
+              <p>+234-916 123 8193</p>
+            </div>
           </div>
           <div className="socials">
             <a
@@ -50,19 +62,11 @@ const Footer = () => {
             >
               <ImWhatsapp />
             </a>
-            <a
-              href="https://www.linkedin.com/company/standage-ltd/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <BsLinkedin />
-            </a>
           </div>
-        </div>
+      </div>
       </div>
       <div className="copyright">
-        <img src={copyright} alt="copyright" />
-        <p> 2022 Standage Kenya Limited. All Rights Reserved</p>
+        <p> &copy; 2022 Standage Nigeria Limited. All Rights Reserved</p>
       </div>
     </FooterContainer>
   );
@@ -75,9 +79,9 @@ const FooterContainer = styled.section`
   padding: 75px 0px 63px 24px;
 
   .brand {
-    width: 134.58px;
+    width: 220px;
     object-fit: cover;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
 
   .nav {
@@ -85,7 +89,7 @@ const FooterContainer = styled.section`
       display: block;
       font-weight: 500;
       font-size: 14px;
-      line-height: 20px;
+      line-height: 28px;
       color: #b3b3b3;
       :hover {
         color: #fffffffd;
@@ -97,26 +101,53 @@ const FooterContainer = styled.section`
     }
   }
 
+  .box{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
   .address {
     margin: 24px 0;
     p {
       color: white;
+      font-size: 14px;
+line-height: 24px;
     }
-    p + p {
+    p + p, p + div, div + div  {
       margin-top: 16px;
     }
+    svg{
+      width: 16px;
+height: 16px;
+color: var(--mainOrange);
+    }
+  }
+  .lagos{
+    margin-top: 40px;
+  }
+  .city{
+    width: 239px;
+  }
+  .orange{
+    color: var(--mainOrange) !important;
+  }
+  h4{
+    margin-bottom: 5px;
+    font-size: 14px;
+    line-height: 28px;
   }
 
   .socials {
     display: flex;
     gap: 20px;
     svg {
-      width: 24px;
-      height: 24px;
+      width: 20px;
+      height: 20px;
       color: white;
       transition: all 0.2s ease-out;
       :hover {
-        width: 25px;
+        width: 21px;
       }
     }
     a + a {
@@ -129,7 +160,6 @@ const FooterContainer = styled.section`
 
   .copyright {
     margin-top: 100px;
-    margin-bottom: 76px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,7 +167,7 @@ const FooterContainer = styled.section`
       font-weight: 500;
       font-size: 14px;
       width: 231px;
-      margin-left: 1rem;
+      margin-left: 5px;
       line-height: 20px;
       color: #b3b3b3;
     }
@@ -145,18 +175,28 @@ const FooterContainer = styled.section`
 
   /* big screen  */
 
-  @media (min-width: 650px) {
+  @media (min-width: 450px) {
     .copyright p {
-      width: 364px;
+      width: 384px;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    padding: 51px 0px 43px 0;
+    .brand {
+      width: 220px !important;
+      margin-top: -0.4rem !important;
     }
   }
 
   @media (min-width: 900px) {
-    padding: 51px 0px 43px 0;
+    padding: 51px 0px 40px 0;
     .brand {
+      width: 150px;
       margin-bottom: 0;
-      margin-top: -0.3rem;
+      margin-top: 0.2rem;
     }
+
     .wrapper {
       display: flex;
       justify-content: space-evenly;
@@ -170,8 +210,23 @@ const FooterContainer = styled.section`
 
       a + a {
         margin-top: 0;
-        margin-left: 40px;
+        margin-left: 20px;
       }
+    }
+
+    
+    /* .headquarters{
+      margin-top: 25px;
+  } */
+
+  p, h4{
+    font-weight: 500;
+font-size: 14px;
+line-height: 24px;
+  }
+      .lagos{
+      margin-top: 0px;
+      line-height: 28px;
     }
 
     .socials {
@@ -183,10 +238,10 @@ const FooterContainer = styled.section`
     }
 
     .copyright {
-      margin-top: 120px;
+      margin-top: 50px;
       margin-bottom: 0px;
       p {
-        width: 364px;
+        width: 384px;
       }
     }
 
