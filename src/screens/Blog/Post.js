@@ -143,9 +143,9 @@ const HeaderContainer = styled.header`
         margin-bottom: 24px;
       }
       li {
-        font-weight: 600;
+        /* font-weight: 600; */
         margin-top: 14px;
-        font-size: 18px;
+        /* font-size: 18px; */
       }
     }
   }
