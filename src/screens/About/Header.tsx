@@ -21,10 +21,7 @@ const Header = () => {
             Africa.
           </h2>
           <p>
-            STANDAGE Kenya is an IT Solutions & Trading company. We develop
-            digital platforms for international trading, connecting businesses
-            in Africa with companies in Japan. We aim to help businesses and
-            users from one end of the chain to another.
+          Stand Enzi takes pride in offering a wide selection of used cars from some of the most trusted brands in the industry. Our inventory is regularly updated to ensure that we have the latest models and styles available for our customers.
           </p>
         </div>
       </div>
@@ -36,11 +33,7 @@ const Header = () => {
             <img src={japan} className="japan" alt="japan flag" />
           </div>
           <p>
-            Our parent company, Standage Japan, is a skilled organization that
-            ventures beyond national boundaries to establish innovative
-            ventures. The goal is to evolve into a complete enterprise that
-            provides support to Fintech enterprises by creating trade
-            infrastructure services that utilize smart contracts/blockchain.
+          Our parent company, Standage Japan, is a skilled organization that ventures beyond national boundaries to establish innovative ventures. The goal is to evolve into a complete enterprise that provides support to Fintech enterprises by creating trade infrastructure services that utilize smart contracts/blockchain.
           </p>
         </div>
       </div>

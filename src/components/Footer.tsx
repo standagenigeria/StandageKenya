@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import brand from "../assets/brand.png";
+import brand from "../assets/brand.svg";
 import { ImWhatsapp } from "react-icons/im";
 import { BsLinkedin, BsInstagram, BsTwitter } from "react-icons/bs";
 import { FiMail } from 'react-icons/fi';

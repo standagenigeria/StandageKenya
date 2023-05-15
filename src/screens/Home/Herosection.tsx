@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
-import Banner from "../../assets/banner.png";
+import Banner from "../../assets/hero-bg.png";
 import Layer1 from "../../assets/icons/layer1.svg";
 
 const Herosection = () => {

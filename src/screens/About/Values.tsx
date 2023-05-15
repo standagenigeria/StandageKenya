@@ -8,10 +8,7 @@ const Values = () => {
         <div className="resized">
           <h2>Our Values</h2>
           <p>
-            We Are in Africa to Provide Businesses that Pitch the African
-            Continent At Par with the rest of the World. The Best Way to Make
-            the Difference is to create a Livelihood for Kenyans. We create
-            Inclusive Businesses to cater for everyone’s needs.
+          We Are in Africa to Provide Businesses that Pitch the African Continent At Par with the rest of the World. The Best Way to Make the Difference is to create a Livelihood for Nigerians. We create Inclusive Businesses to cater for everyone’s needs..
           </p>
         </div>
       </div>

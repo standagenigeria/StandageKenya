@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import styled from "styled-components";
-import brand from "../assets/brand.png";
+import brand from "../assets/brand.svg";
 import { FiMenu } from "react-icons/fi";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 
@@ -89,7 +89,7 @@ const Navbar = () => {
 };
 
 const Container = styled.div`
-  padding: 30px;
+  padding: 20px 37px 10px 37px;
   background: var(--mainBlack);
   position: sticky;
   top: 0;

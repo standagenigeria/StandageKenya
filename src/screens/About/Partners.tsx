@@ -1,38 +1,27 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-import { AllPartners } from "../../components/Partners";
+import partners from "../../assets/partner.png";
 
 const Partners = () => {
   return (
     <PartnersContainer>
       <div className="description">
         <h3>
-          We Have a Robust Network of Companies that have formed a formidable
-          Business Front.
+          We Have a Robust Network of Companies that have formed a formidable Business Front.
         </h3>
         <p>
-          We have built scaling businesses, purposefully designed for value
-          creation in Nigeria. From our Parent firm in Japan, our aim is to
-          enrich regions of the World thereby bridging the gap of wealth across
-          Nations.
+        We have built scaling businesses, purposefully designed for value creation in Africa. From our Parent firm in Japan, our aim is to enrich regions of the World thereby bridging the gap of wealth across Nations.
         </p>
       </div>
       <div className="wrapper">
-        <div className="slider">
-          {AllPartners.map((partner) => (
-            <div className="img__container" key={partner.id}>
-              <img src={partner.logo} alt={partner.name} />
-            </div>
-          ))}
+      <div className="partner-img">
+        <img src={partners} alt="" />
         </div>
       </div>
     </PartnersContainer>
   );
 };
-const RightUp = keyframes`
- from {bottom:0px;}
-  to {bottom: 530px;}
-`;
+
 
 const PartnersContainer = styled.section`
   padding: 80px 24px;
@@ -59,38 +48,21 @@ const PartnersContainer = styled.section`
     align-items: center;
   }
 
-  .slider {
-    width: 350px;
-    height: 296px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 25px;
-    position: relative;
-    justify-content: space-around;
-    animation: ${RightUp} infinite;
-    animation-duration: 15s;
-    animation-delay: 0s;
-    animation-timing-function: ease;
-    animation-direction: alternate;
-
-    .img__container {
-      background: #ffffff;
-      box-shadow: 0px 3.93617px 11.8085px rgba(0, 0, 0, 0.1);
-      width: 150px;
-      height: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      img {
-        width: 100px;
-      }
+  
+  .partner-img{
+    img{
+      width: 100%;
+      height: 320px;
+object-fit:cover;
     }
   }
 
+
+
   @media (min-width: 650px) {
-    .slider {
-      width: 600px;
-    }
+    // .slider {
+    //   width: 600px;
+    // }
   }
 
   @media (min-width: 800px) {
@@ -122,12 +94,11 @@ const PartnersContainer = styled.section`
         line-height: 28px;
       }
     }
-    .slider {
-      width: 415px;
-      height: 376px;
 
-      .img__container {
-        height: 64px;
+    .partner-img{
+      img{
+        width: 525.17px;
+  height: 480px;
       }
     }
   }

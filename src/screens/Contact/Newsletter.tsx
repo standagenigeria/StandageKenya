@@ -72,7 +72,7 @@ const Newsletter = ({ tagLine }: DefaultProps) => {
         )}
       </Toaster>
    
-      <Formik
+      {/* <Formik
         initialValues={initialValues}
         validationSchema={newsLetterSchema}
         onSubmit={(values) => handleSubmit(values)}
@@ -99,7 +99,7 @@ const Newsletter = ({ tagLine }: DefaultProps) => {
             </>
           );
         }}
-      </Formik>
+      </Formik> */}
     </NewsContainer>
   );
 };
