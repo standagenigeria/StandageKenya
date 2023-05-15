@@ -11,7 +11,10 @@ const WhyChoose = () => {
       <p>We should be your go-to company for the following reasons.</p>
       <div className="gallery">
         <div className="card">
+            <div className="img-cover">
           <img src={wh1} alt="" />
+            </div>
+            <div className="img-footer">
           <h3>Quality</h3>
           <p>
             We take great pride in the quality of our used cars. Every vehicle
@@ -19,24 +22,35 @@ const WhyChoose = () => {
             technicians to ensure that it meets our high standards for safety
             and performance.
           </p>
+            </div>
         </div>
         <div className="card">
+        <div className="img-cover">
           <img src={wh2} alt="" />
+            </div>
+            <div className="img-footer">
+                
           <h3>Value</h3>
           <p>
             We believe in providing our customers with the best value for their
             money. That's why we offer affordable prices and a no-haggle pricing
             policy, so you can feel confident that you're getting a fair deal.
           </p>
+                </div>
         </div>
         <div className="card">
+        <div className="img-cover">
           <img src={wh3} alt="" />
+            </div>
+            <div className="img-footer">
+                
           <h3>Selection</h3>
           <p>
             Our inventory includes a diverse selection of used cars from some of
             the most trusted brands in the industry. We have a wide range of
             models and styles to choose from.
           </p>
+                </div>
         </div>
       </div>
     </Container>
@@ -113,11 +127,18 @@ const Container = styled.div`
     }
     .gallery {
       display: flex;
+      height: 596px;
       flex-direction: row;
       .card {
         width: 30vw;
-        img {
-          height: 400px;
+        .img-cover{
+            height: 400px !important;
+            img {
+              height: 400px !important;
+            }
+        }
+        .img-footer{
+            height: 180px;
         }
         h3 {
           font-weight: 700;
