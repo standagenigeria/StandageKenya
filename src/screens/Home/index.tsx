@@ -4,6 +4,7 @@ import About from "./About";
 import Hero from "./Hero";
 import Newsletter from "../Contact/Newsletter";
 import Vehicles from "./Vehicles";
+import WhyChoose from "./WhyChoose";
 
 const Index = () => {
   return (
@@ -12,6 +13,7 @@ const Index = () => {
         <Hero />
         <About />
         <Vehicles/>
+        <WhyChoose/>
         <Newsletter/>
       </HomeContainer>
     </Wrapper>
