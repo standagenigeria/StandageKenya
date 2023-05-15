@@ -1,75 +1,152 @@
 import React from "react";
 import styled from "styled-components";
-import Layer2 from "../../assets/icons/layer2.svg"
+import AboutImg from "../../assets/company.png";
+import star from "../../assets/Star.svg";
 
 const About = () => {
   return (
     <AboutContainer>
-      <img src={Layer2} alt="" />
-      <h2>About Our Company</h2>
-      <p>
-        Established in 2017, STANDAGE Kenya specializes in IT Solutions and
-        Trading. We create digital platforms for international trade, linking
-        African businesses with Japanese companies. We bring the finest Japanese
-        products with the highest quality to every corner of Africa.
-      </p>
+      <img src={AboutImg} alt="" className="about-img" />
+      <div className="wrapper">
+        <div className="description">
+          <img src={star} alt="" className="star" />
+          <h2>About Our Company</h2>
+          <p>
+            Established in 2022, Stand Enzi takes pride in offering a wide
+            selection of used cars from some of the most trusted brands in the
+            industry. Our inventory is regularly updated to ensure that we have
+            the latest models and styles available for our customers.
+          </p>
+        </div>
+        <div className="footer">
+          <div className="box">
+            <h3>20+</h3>
+            <p>Types of Premium Used Vehicles</p>
+          </div>
+          <div className="line"></div>
+          <div className="box">
+            <h3>2+</h3>
+            <p>Years of Experience</p>
+          </div>
+        </div>
+      </div>
     </AboutContainer>
   );
 };
 
 const AboutContainer = styled.div`
+  padding: 80px 24px;
   display: flex;
-  position: relative;
-  align-items: center;
   flex-direction: column;
   justify-content: center;
-  margin: 80px 20px 80px 20px;
+  align-items: center;
 
-  img{
-   display: none;
+  .about-img {
+    width: 100%;
+    /* height: 320.79px; */
+    object-fit: cover;
   }
 
+  .star {
+    width: 55px;
+    height: 55px;
+    margin-top: 43px;
+    margin-bottom: 16px;
+  }
   h2 {
-    text-align: center;
     font-weight: 700;
     font-size: 24px;
-    line-height: 32px;
     color: var(--mainPurple);
-    margin-bottom: 8px;
+    line-height: 32px;
   }
   p {
     font-weight: 500;
-    /* width: 95%; */
-    text-align: center;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 24px;
     color: var(--fontColor);
   }
-
-  @media (min-width: 950px) {
-    h2 {
-      font-size: 32px;
-      line-height: 48px;
+  .footer {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+    justify-content: space-evenly;
+    .line {
+      width: 4px;
+      height: 76px;
+      background: #f2f2f2;
+      border-radius: 2px;
     }
-    p {
-      width:70%;
-      font-size: 16px;
-      line-height: 28px;
+    .box {
+      text-align: center;
+      h3 {
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 48px;
+        color: var(--mainPurple);
+      }
+      p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        color: #1a1a1a;
+      }
     }
-    img{
-    position: absolute;
-    display: block;
-    top: 15px;
-    z-index: -1;
-    right: -30px;
   }
-  }
+    @media (min-width: 600px) {
 
-  @media (min-width: 1200px) {
-    p {
-      width:50%;
+      .about-img{
+        width: 526px;
+  height: 499px;
+      }
     }
+
+    @media (min-width: 768px) {
+      .wrapper{
+        width: 70%;
+      .star{
+        width: 71px;
+height: 71px;
+      }
+      h2{
+        font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+      }
+      p{
+        font-weight: 500;
+font-size: 16px;
+line-height: 28px;
+      }
+.footer{
+  margin-top: 42px;
+}
+      .box{
+      
+        h3{
+          font-weight: 800;
+font-size: 32px;
+line-height: 48px;
+        }
+        p{
+          font-weight: 500;
+font-size: 14px;
+line-height: 24px;
+        }
+      }
+    }
+    }
+  @media (min-width: 1000px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .wrapper{
+      width: 443px;
+    }   
   }
 `;
 
 export default About;
+
+

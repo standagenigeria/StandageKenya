@@ -1,15 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 import About from "./About";
-import Herosection from "./Herosection";
+import Hero from "./Hero";
 import Newsletter from "../Contact/Newsletter";
+import Vehicles from "./Vehicles";
 
 const Index = () => {
   return (
     <Wrapper>
       <HomeContainer>
-        <Herosection />
+        <Hero />
         <About />
+        <Vehicles/>
         <Newsletter/>
       </HomeContainer>
     </Wrapper>
