@@ -131,6 +131,7 @@ const Container = styled.div`
       flex-direction: row;
       .card {
         width: 30vw;
+        max-width: 380px;
         .img-cover{
             height: 400px !important;
             img {

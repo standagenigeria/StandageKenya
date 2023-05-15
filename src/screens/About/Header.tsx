@@ -21,7 +21,10 @@ const Header = () => {
             Africa.
           </h2>
           <p>
-          Stand Enzi takes pride in offering a wide selection of used cars from some of the most trusted brands in the industry. Our inventory is regularly updated to ensure that we have the latest models and styles available for our customers.
+            Stand Enzi takes pride in offering a wide selection of used cars
+            from some of the most trusted brands in the industry. Our inventory
+            is regularly updated to ensure that we have the latest models and
+            styles available for our customers.
           </p>
         </div>
       </div>
@@ -33,7 +36,11 @@ const Header = () => {
             <img src={japan} className="japan" alt="japan flag" />
           </div>
           <p>
-          Our parent company, Standage Japan, is a skilled organization that ventures beyond national boundaries to establish innovative ventures. The goal is to evolve into a complete enterprise that provides support to Fintech enterprises by creating trade infrastructure services that utilize smart contracts/blockchain.
+            Our parent company, Standage Japan, is a skilled organization that
+            ventures beyond national boundaries to establish innovative
+            ventures. The goal is to evolve into a complete enterprise that
+            provides support to Fintech enterprises by creating trade
+            infrastructure services that utilize smart contracts/blockchain.
           </p>
         </div>
       </div>
@@ -68,8 +75,8 @@ const HeaderContainer = styled.main`
     }
 
     img {
-      width: 327px;
-      /* height: 248px; */
+      width: 100%;
+      height: 248px;
       object-fit: contain;
       animation: slideIn 1s ease-in-out forwards;
     }
@@ -126,7 +133,7 @@ const HeaderContainer = styled.main`
 
   .others {
     margin-top: 40px;
-    padding: 0 52px;
+    /* padding: 0 52px; */
     h4 {
       font-size: 16px;
       font-weight: 500;
@@ -141,11 +148,11 @@ const HeaderContainer = styled.main`
       display: flex;
       /* justify-content: center; */
       align-items: center;
-      gap: 19px;
+      gap: 10px;
     }
   }
 
-  @media (max-width: 350px) {
+  @media (max-width: 410px) {
     img {
       width: 15rem;
     }
@@ -173,7 +180,10 @@ const HeaderContainer = styled.main`
 
       img.teams {
         width: 45%;
+        height: 480px;
+        object-fit: contain;
       }
+
       .description {
         width: 50%;
         margin-top: 0;

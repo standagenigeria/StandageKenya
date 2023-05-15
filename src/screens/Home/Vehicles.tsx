@@ -18,19 +18,19 @@ const Vehicles = () => {
         </div>
         <div className="card">
           <img src={vh2} alt="" />
-          <p>LANDCRUISER PRADO</p>
+          <p>TOYOTA NOAH</p>
         </div>
         <div className="card">
           <img src={vh3} alt="" />
-          <p>LANDCRUISER PRADO</p>
+          <p>TOYOTA SIENTA</p>
         </div>
         <div className="card">
           <img src={vh4} alt="" />
-          <p>LANDCRUISER PRADO</p>
+          <p>TOYOTA VOXY</p>
         </div>
         <div className="card">
           <img src={vh5} alt="" />
-          <p>LANDCRUISER PRADO</p>
+          <p>NISSAN</p>
         </div>
       </div>
     </Container>

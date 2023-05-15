@@ -1,12 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import brand from "../assets/brand.svg";
+import brand from "../assets/brand.png";
 import { ImWhatsapp } from "react-icons/im";
 import { BsLinkedin, BsInstagram, BsTwitter } from "react-icons/bs";
 import { FiMail } from 'react-icons/fi';
 import { MdPhoneInTalk} from 'react-icons/md';
-import copyright from "../assets/icons/copyright.svg";
 
 const Footer = () => {
   return (
@@ -20,24 +19,17 @@ const Footer = () => {
           <Link to="/about">About us</Link>
           <Link to="/contact-us">Contact Us</Link>
         </div>
-      <div className="container">
-          <div className="address">
-            <h4 className="orange headquarters">Headquarters</h4>
-            <p className="city">4F Shiba NA Building, 3-6-10, Shiba
-Minato-ku, Tokyo, Japan, 105-0014</p>
-        </div>
-      </div>
         <div className="container">
           <div className="address">
-            <h4 className="orange lagos">Kenya Office</h4>
-            <p className="city">No 1, Adedotun Dina Crescent, Mende Maryland, Lagos. Nigeria</p>
+            <h4 className="orange lagos">Kenya Office:</h4>
+            <p className="city">Garden Estate Road next to Roasters Inn, Nairobi.</p>
             <div className="box">
               <FiMail/>
-              <p>info@standage.com.ng</p>
+              <p>info@standage.co.ke</p>
             </div>
             <div className="box">
               <MdPhoneInTalk/>
-              <p>+234-916 123 8193</p>
+              <p>+254 708 210 219</p>
             </div>
           </div>
           <div className="socials">
@@ -49,24 +41,29 @@ Minato-ku, Tokyo, Japan, 105-0014</p>
               <BsTwitter />
             </a>
             <a
-              href="https://www.instagram.com/standage_ng/"
+              href="/"
               target="_blank"
               rel="noreferrer"
             >
               <BsInstagram />
             </a>
             <a
-              href="http://api.whatsapp.com/send?phone=2349161238193"
+              href="https://www.linkedin.com/company/standage-inc/"
               target="_blank"
               rel="noreferrer"
             >
-              <ImWhatsapp />
+              <BsLinkedin />
             </a>
           </div>
+          <div className="address">
+            <h4 className="orange headquarters">Headquarters</h4>
+            <p className="city">4F Shiba NA Building, 3-6-10, Shiba
+Minato-ku, Tokyo, Japan, 105-0014</p>
+        </div>
       </div>
       </div>
       <div className="copyright">
-        <p> &copy; 2022 Standage Nigeria Limited. All Rights Reserved</p>
+        <p> &copy; 2023 Stand Enzi Limited. All Rights Reserved</p>
       </div>
     </FooterContainer>
   );
@@ -79,7 +76,7 @@ const FooterContainer = styled.section`
   padding: 75px 0px 63px 24px;
 
   .brand {
-    width: 220px;
+    width: 150px;
     object-fit: cover;
     margin-bottom: 50px;
   }
@@ -184,7 +181,7 @@ color: var(--mainOrange);
   @media (min-width: 1000px) {
     padding: 51px 0px 43px 0;
     .brand {
-      width: 220px !important;
+      /* width: 220px !important; */
       margin-top: -0.4rem !important;
     }
   }
@@ -210,14 +207,14 @@ color: var(--mainOrange);
 
       a + a {
         margin-top: 0;
-        margin-left: 20px;
+        margin-left: 40px;
       }
     }
 
     
-    /* .headquarters{
+    .headquarters{
       margin-top: 25px;
-  } */
+  }
 
   p, h4{
     font-weight: 500;

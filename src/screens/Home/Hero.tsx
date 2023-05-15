@@ -23,7 +23,8 @@ const Hero = () => {
 
 const Container = styled.div`
   background-image: url(${BG});
-
+  background-position: center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -56,6 +57,7 @@ line-height: 48px;
 
   @media(min-width:768px) {
     height: 90vh;
+    max-height: 720px;
     .wrapper{
     width: 746px;
     padding: 0 24px ;

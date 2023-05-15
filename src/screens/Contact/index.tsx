@@ -8,7 +8,7 @@ const index = () => {
     <Wrapper>
       <Contact>
         <Header />
-        {/* <Form /> */}
+        <Form />
       </Contact>
     </Wrapper>
   );

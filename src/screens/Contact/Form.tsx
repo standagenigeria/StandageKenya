@@ -62,12 +62,12 @@ const Form = ({ cols, rows }: CommonProps) => {
 
   return (
     <FormContainer>
-      {/* <Formik
+      <Formik
         initialValues={initialValues}
         validationSchema={contactSchema}
-        onSubmit={(values) => handleSubmit(values)}
+        onSubmit={(values: any) => handleSubmit(values)}
       >
-        {(formik) => {
+        {(formik : any) => {
           const { errors, touched } = formik;
           return (
             <form className="wrapper" onSubmit={formik.handleSubmit}>
@@ -167,10 +167,7 @@ const Form = ({ cols, rows }: CommonProps) => {
             </form>
           );
         }}
-      </Formik> */}
-      <h1>
-        Hello world
-      </h1>
+      </Formik>
     </FormContainer>
   );
 };

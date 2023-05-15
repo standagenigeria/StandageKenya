@@ -6,6 +6,7 @@ const Partners = () => {
   return (
     <PartnersContainer>
       <div className="description">
+        <p className="orange">OUR NETWORK</p>
         <h3>
           We Have a Robust Network of Companies that have formed a formidable Business Front.
         </h3>
@@ -28,7 +29,7 @@ const PartnersContainer = styled.section`
   h3 {
     font-weight: 700;
     font-size: 24px;
-    text-align: center;
+    /* text-align: center; */
     margin-bottom: 16px;
     line-height: 32px;
   }
@@ -37,7 +38,13 @@ const PartnersContainer = styled.section`
     font-size: 14px;
     line-height: 20px;
     color: var(--fontColor);
-    text-align: center;
+    /* text-align: center; */
+  }
+  .orange{
+    line-height: 24px;
+    color: var(--mainOrange);
+    /* text-align: left; */
+    margin-bottom: 16px;
   }
 
   .wrapper {

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import styled from "styled-components";
-import brand from "../assets/brand.svg";
+import brand from "../assets/brand.png";
 import { FiMenu } from "react-icons/fi";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 
@@ -119,7 +119,7 @@ const Container = styled.div`
       margin-left: 25px;
     }
     img {
-      width: 134.58px;
+      width: 150px;
       object-fit: cover;
     }
     .menu__icon {

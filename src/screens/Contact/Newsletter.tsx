@@ -52,6 +52,7 @@ const Newsletter = ({ tagLine }: DefaultProps) => {
 
   return (
     <NewsContainer>
+      <div className="wrapper">
       <h2>Subscribe to our Newsletter!</h2>
       <p>
         {tagLine
@@ -72,12 +73,12 @@ const Newsletter = ({ tagLine }: DefaultProps) => {
         )}
       </Toaster>
    
-      {/* <Formik
+     <Formik
         initialValues={initialValues}
         validationSchema={newsLetterSchema}
-        onSubmit={(values) => handleSubmit(values)}
+        onSubmit={(values : any) => handleSubmit(values)}
       >
-        {(formik) => {
+        {(formik : any) => {
           const { errors, touched } = formik;
           return (
             <>
@@ -99,7 +100,8 @@ const Newsletter = ({ tagLine }: DefaultProps) => {
             </>
           );
         }}
-      </Formik> */}
+      </Formik> 
+      </div>
     </NewsContainer>
   );
 };
@@ -110,6 +112,12 @@ const NewsContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  .wrapper{
+    background: #FFFAF4;
+    padding: 50px 40px;
+  }
+  
   h2 {
     font-weight: 600;
     font-size: 20px;
@@ -165,6 +173,11 @@ const NewsContainer = styled.div`
   }
 
   @media (min-width: 768px) {
+    .wrapper{
+    background: #FFFAF4;
+    padding:80px 150px;
+  }
+
     h2 {
       font-weight: 700;
       font-size: 32px;
