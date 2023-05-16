@@ -25,7 +25,7 @@ const Container = styled.div`
   background-image: url(${BG});
   background-position: center;
   background-size: cover;
-  height: 90vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
