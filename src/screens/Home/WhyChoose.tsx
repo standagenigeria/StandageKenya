@@ -59,6 +59,7 @@ const WhyChoose = () => {
 
 const Container = styled.div`
   padding: 80px 24px;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -112,6 +113,10 @@ const Container = styled.div`
     .card {
       width: 480px;
     }
+  }
+
+  @media (min-width: 768px) {
+    padding-bottom: 80px;
   }
 
   @media (min-width: 1000px) {
