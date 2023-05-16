@@ -70,12 +70,6 @@ const Navbar = () => {
             <Link to="/about" onClick={toggle}>
               About us
             </Link>
-            <Link to="/merchandise" onClick={toggle}>
-              Merchandise
-            </Link>
-            <Link to="/blog" onClick={toggle}>
-              Blog
-            </Link>
             <Link to="/contact-us" onClick={toggle}>
               Contact Us
             </Link>

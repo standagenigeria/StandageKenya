@@ -47,6 +47,13 @@ const Footer = () => {
             >
               <BsInstagram />
             </a>
+            {/* <a
+              href="https://twitter.com/STANDAGE_JP"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <ImWhatsapp />
+            </a> */}
             <a
               href="https://www.linkedin.com/company/standage-inc/"
               target="_blank"
