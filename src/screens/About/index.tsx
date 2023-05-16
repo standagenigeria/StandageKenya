@@ -19,11 +19,11 @@ const index = () => {
 };
 
 const About = styled.main`
-  max-width: 1700px;
+  max-width: 2500px;
 `;
 
 const Wrapper = styled.div`
-  @media (min-width: 1700px) {
+  @media (min-width: 2500px) {
     display: flex;
     align-items: center;
     flex-direction: column;

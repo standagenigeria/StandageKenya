@@ -25,22 +25,23 @@ const Container = styled.div`
   background-image: url(${BG});
   background-position: center;
   background-size: cover;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+
   .wrapper {
-      padding: 70px 24px ;
+    padding: 70px 24px;
     display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: #ffffff;
     h1 {
-        font-weight: 700;
-        font-size: 32px;
-line-height: 48px;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 48px;
       text-align: center;
     }
     p {
@@ -55,22 +56,22 @@ line-height: 48px;
     }
   }
 
-  @media(min-width:768px) {
-    height: 90vh;
-    max-height: 720px;
-    .wrapper{
-    width: 746px;
-    padding: 0 24px ;
-    h1{
+  @media (min-width: 768px) {
+    height: 100vh;
+    max-height: 900px;
+    .wrapper {
+      width: 780px;
+      padding: 0 24px;
+      h1 {
         font-weight: 800;
-      font-size: 48px;
-      line-height: 64px;
-      margin-bottom: 16px;
-    }
-    p{
-        margin-bottom: 40px;
-        width: 606px;
-    }
+        font-size: 52px;
+        line-height: 64px;
+        margin-bottom: 16px;
+      }
+      p {
+        margin-bottom: 44px;
+        width: 616px;
+      }
     }
   }
 `;

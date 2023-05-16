@@ -72,7 +72,7 @@ const ValueContainer = styled.section`
     margin-top: 64px;
     padding: 32px;
     width: 330px;
-    /* height: 229px; */
+    /* height: 250px; */
     border: 1px solid #fddfbb;
     filter: drop-shadow(0px 5px 15px rgba(255, 255, 255, 0.15));
   }
@@ -107,7 +107,7 @@ const ValueContainer = styled.section`
     .border {
       width: 464px;
       height: 305px;
-      padding: 78px 44px 59px 44px;
+      /* padding: 78px 44px 59px 44px; */
     }
 
     .flexbox {
@@ -121,6 +121,12 @@ const ValueContainer = styled.section`
     }
     .border + .border {
       margin-top: 0px;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .border {
+      padding: 78px 44px 59px 44px;
     }
   }
 `;

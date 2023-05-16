@@ -143,16 +143,16 @@ const Container = styled.div`
   }
 
   //maximum screen size
-  @media (min-width: 1500px) {
+  /* @media (min-width: 1800px) {
     padding: 32px 73px 13px 73px;
     display: flex;
     align-items: center;
     justify-content: center;
 
     .desktop {
-      width: 1500px;
+      width: 1800px;
     }
-  }
+  } */
 
   /* small screen */
   .mobile {

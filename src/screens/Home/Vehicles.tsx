@@ -102,6 +102,18 @@ const Container = styled.section`
       }
     }
   }
+
+  @media (min-width: 1500px) {
+    .gallery {
+      gap: 34px;
+    }
+    .card {
+      img {
+        width: 480px;
+        height: 320px;
+      }
+    }
+  }
 `;
 
 export default Vehicles;

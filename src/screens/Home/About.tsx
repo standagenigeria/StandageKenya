@@ -72,12 +72,14 @@ const AboutContainer = styled.div`
     justify-content: space-evenly;
     .line {
       width: 4px;
+      margin: 0 15px;
       height: 76px;
       background: #f2f2f2;
       border-radius: 2px;
     }
     .box {
       text-align: center;
+      width: 38vw;
       h3 {
         font-weight: 800;
         font-size: 32px;

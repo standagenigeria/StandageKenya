@@ -1,40 +1,21 @@
 import React from "react";
-import styled from "styled-components";
 import About from "./About";
 import Hero from "./Hero";
 import Newsletter from "../Contact/Newsletter";
 import Vehicles from "./Vehicles";
 import WhyChoose from "./WhyChoose";
 
+
 const Index = () => {
   return (
-    <Wrapper>
-      <HomeContainer>
-        <Hero />
-        <About />
-        <Vehicles/>
-        <WhyChoose/>
-        <Newsletter/>
-      </HomeContainer>
-    </Wrapper>
+    <>
+      <Hero />
+      <About />
+      <Vehicles />
+      <WhyChoose />
+      <Newsletter />
+    </>
   );
 };
-
-
-
-const HomeContainer = styled.main`
-  max-width: 1700px;
-  position: relative;
-`;
-
-const Wrapper = styled.div`
-
-  @media (min-width: 1700px) {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-  }
-`;
 
 export default Index;
