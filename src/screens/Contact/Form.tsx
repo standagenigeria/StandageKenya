@@ -1,6 +1,6 @@
-import { ErrorMessage, Field, Formik, useFormik } from "formik";
+import { ErrorMessage, Field, Formik } from "formik";
 import * as Yup from "yup";
-import React, { useRef, useState } from "react";
+import React from "react";
 import emailjs from "@emailjs/browser";
 import styled from "styled-components";
 import toast, { ToastBar, Toaster } from "react-hot-toast";
@@ -39,10 +39,10 @@ const Form = ({ cols, rows }: CommonProps) => {
     toast
       .promise(
         emailjs.send(
-          "service_6kge3jc",
-          "template_r16ahjb",
+          "service_ej9rian",
+          "template_o9bhnxt",
           values,
-          "YmT0p5amxwnWAvpIW"
+          "NPxmSCX_fwf-cGSlt"
         ),
         {
           loading: "Sending...",

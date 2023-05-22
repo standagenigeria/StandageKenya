@@ -28,10 +28,10 @@ const Newsletter = ({ tagLine }: DefaultProps) => {
     toast
       .promise(
         emailjs.send(
-          "service_6kge3jc",
-          "Newsletter_fssf445",
+          "service_ej9rian",
+          "template_2zxy8wj",
           values,
-          "YmT0p5amxwnWAvpIW"
+          "NPxmSCX_fwf-cGSlt"
         ),
         {
           loading: "Sending...",
